@@ -4,16 +4,16 @@ from fastapi.responses import HTMLResponse
 
 app = FasAPI
 
-lista_integrantes = [{'item_id': 1, 'matricula': 091810, 'nombre': 'Cynthia', 'edad': 21},
-                     {'item_id': 2, 'matricula': 091810, 'nombre': 'Diana', 'edad': 21},
-                     {'item_id': 3, 'matricula': 091810, 'nombre': 'Gerardo', 'edad': 21},
-                     {'item_id': 4, 'matricula': 091810, 'nombre': 'Luis', 'edad': 21},
-                     {'item_id': 5, 'matricula': 091810, 'nombre': 'Carlos', 'edad': 21},
-                     {'item_id': 6, 'matricula': 091810, 'nombre': 'Juan', 'edad': 21},
-                     {'item_id': 7, 'matricula': 091810, 'nombre': 'Azucena', 'edad': 21},
-                     {'item_id': 8, 'matricula': 091810, 'nombre': 'Maria', 'edad': 21},
-                     {'item_id': 9, 'matricula': 091810, 'nombre': 'Pedro', 'edad': 21},
-                     {'item_id': 10, 'matricula': 091810, 'nombre': 'Ursula', 'edad': 21}]
+lista_integrantes = [{'item_id': 1, 'matricula': 091810, 'nombre': 'Cynthia', 'Apaterno':'Hernandez', 'AMaterno':'Morales', 'edad': 21},
+                     {'item_id': 2, 'matricula': 091810, 'nombre': 'Diana','Apaterno':'Rodriguez', 'AMaterno':'Aguilar','edad': 21},
+                     {'item_id': 3, 'matricula': 091810, 'nombre': 'Gerardo', 'Apaterno':'Perez', 'AMaterno':'Perez','edad': 21},
+                     {'item_id': 4, 'matricula': 091810245, 'nombre': 'Luis', 'Apaterno':'Perez', 'AMaterno':'Morales','edad': 21},
+                     {'item_id': 5, 'matricula': 091810, 'nombre': 'Carlos', 'Apaterno':'Cinto', 'AMaterno':'Ortiz','edad': 21},
+                     {'item_id': 6, 'matricula': 091810, 'nombre': 'Juan', 'Apaterno':'Dominguez', 'AMaterno':'Herrera', 'edad': 21},
+                     {'item_id': 7, 'matricula': 091810, 'nombre': 'Azucena','Apaterno':'Gonzalez', 'AMaterno':'Sanchez', 'edad': 21},
+                     {'item_id': 8, 'matricula': 091810, 'nombre': 'Maria','Apaterno':'Santizo', 'AMaterno':'Estrada', 'edad': 21},
+                     {'item_id': 9, 'matricula': 091810, 'nombre': 'Pedro', 'Apaterno':'Arrecho', 'AMaterno':'Escalante', 'edad': 21},
+                     {'item_id': 10, 'matricula': 091810, 'nombre': 'Ursula','Apaterno':'Lopez', 'AMaterno':'Lopez', 'edad': 21}]
 
 @app.get("/integrantes")
 async def leer_integrante(item_id: int):
