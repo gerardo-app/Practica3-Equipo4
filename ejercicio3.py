@@ -2,7 +2,7 @@ from typing import Optiona1
 from fastapi  import  FasAPI
 from fastapi.responses import HTMLResponse
 
-app = FasAPI
+app = fastAPI
 
 lista_integrantes = [{'item_id': 1, 'matricula': 091810, 'nombre': 'Cynthia', 'Apaterno':'Hernandez', 'AMaterno':'Morales', 'edad': 21},
                      {'item_id': 2, 'matricula': 091810, 'nombre': 'Diana','Apaterno':'Rodriguez', 'AMaterno':'Aguilar','edad': 21},
