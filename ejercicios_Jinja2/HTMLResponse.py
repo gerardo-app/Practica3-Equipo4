@@ -1,4 +1,4 @@
-from fastapi  import  FasAPI
+from fastapi  import  FastAPI
 from fastapi.responses import HTMLResponse
 
 app = FastAPI ()
